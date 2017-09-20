@@ -4,48 +4,48 @@
       Headers
     </button>
     <div class="dropdown-menu" aria-labelledby="headerMenuButton">
-      <a href="#" class="dropdown-item">H1</a>
-      <a href="#" class="dropdown-item">H2</a>
-      <a href="#" class="dropdown-item">H3</a>
-      <a href="#" class="dropdown-item">H4</a>
-      <a href="#" class="dropdown-item">H5</a>
+      <button class="dropdown-item" data-editor="h1">H1</button>
+      <button class="dropdown-item" data-editor="h2">H2</button>
+      <button class="dropdown-item" data-editor="h3">H3</button>
+      <button class="dropdown-item" data-editor="h4">H4</button>
+      <button class="dropdown-item" data-editor="h5">H5</button>
     </div>
   </div>
 
   <div class="btn-group mr-2" role="group">
-    <button class="btn btn-light btn-sm" data-toggle="tooltip" title="Italic" data-placement="top">
+    <button class="btn btn-light btn-sm" data-toggle="tooltip" title="Italic" data-placement="top" data-editor="italic">
       <%= icon('italic') %>
     </button>
-    <button class="btn btn-light btn-sm" data-toggle="tooltip" title="Bold" data-placement="top">
+    <button class="btn btn-light btn-sm" data-toggle="tooltip" title="Bold" data-placement="top" data-editor="bold">
       <%= icon('bold') %>
     </button>
-    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Unordered list">
+    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Unordered list" data-editor="ul">
       <%= icon('list-ul') %>
     </button>
-    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Ordered list">
+    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Ordered list" data-editor="ol">
       <%= icon('list-ol') %>
     </button>
     <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Indent">
       <%= icon('indent') %>
     </button>
-    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Underline">
+    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Underline" data-editor="underline">
       <%= icon('underline') %>
     </button>
-    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Table">
+    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Table" data-editor="table">
       <%= icon('table') %>
     </button>
   </div>
 
   <div class="btn-group mr-2" role="group">
-    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Link">
+    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Link" data-editor="link">
       <%= icon('link') %>
     </button>
-    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Image">
+    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Image" data-editor="image">
       <%= icon('image') %>
     </button>
   </div>
 
-  <button class="btn btn-info btn-sm">
+  <button id="md-preview" class="btn btn-info btn-sm" data-editor="preview">
     Preview
   </button>
 </div>
