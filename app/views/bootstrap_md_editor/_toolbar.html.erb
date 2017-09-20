@@ -1,7 +1,51 @@
 <div class="btn-toolbar" role="toolbar">
-  <div class="btn-group" role="group">
-    <button class="btn btn-light">
+  <div class="dropdown mr-2">
+    <button id="headerMenuButton" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       Headers
     </button>
+    <div class="dropdown-menu" aria-labelledby="headerMenuButton">
+      <a href="#" class="dropdown-item">H1</a>
+      <a href="#" class="dropdown-item">H2</a>
+      <a href="#" class="dropdown-item">H3</a>
+      <a href="#" class="dropdown-item">H4</a>
+      <a href="#" class="dropdown-item">H5</a>
+    </div>
   </div>
+
+  <div class="btn-group mr-2" role="group">
+    <button class="btn btn-light btn-sm" data-toggle="tooltip" title="Italic" data-placement="top">
+      <%= icon('italic') %>
+    </button>
+    <button class="btn btn-light btn-sm" data-toggle="tooltip" title="Bold" data-placement="top">
+      <%= icon('bold') %>
+    </button>
+    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Unordered list">
+      <%= icon('list-ul') %>
+    </button>
+    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Ordered list">
+      <%= icon('list-ol') %>
+    </button>
+    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Indent">
+      <%= icon('indent') %>
+    </button>
+    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Underline">
+      <%= icon('underline') %>
+    </button>
+    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Table">
+      <%= icon('table') %>
+    </button>
+  </div>
+
+  <div class="btn-group mr-2" role="group">
+    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Link">
+      <%= icon('link') %>
+    </button>
+    <button class="btn btn-light btn-sm" data-toggle="tooltip" data-placement="top" title="Image">
+      <%= icon('image') %>
+    </button>
+  </div>
+
+  <button class="btn btn-info btn-sm">
+    Preview
+  </button>
 </div>
