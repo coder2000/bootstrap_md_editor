@@ -1,5 +1,6 @@
 require "bootstrap_md_editor/engine"
+require 'bootstrap_md_editor/railtie'
 
 module BootstrapMdEditor
-  # Your code goes here...
+
 end

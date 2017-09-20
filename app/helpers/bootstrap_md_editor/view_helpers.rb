@@ -1,5 +1,5 @@
 module BootstrapMdEditor
-  module ApplicationHelper
+  module ViewHelpers
     def bootstrap_md_editor
       render 'bootstrap_md_editor/toolbar'
     end
