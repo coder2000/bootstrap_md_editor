@@ -2,7 +2,9 @@
 Short description and motivation.
 
 ## Usage
-How to use my plugin.
+```erb
+<%= bootstrap_md_editor form, :variable %>
+```
 
 ## Installation
 Add this line to your application's Gemfile:
